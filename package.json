@@ -7,7 +7,9 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^2.0.0",
     "dev-server": "0.0.2",
+    "express": "^4.16.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "live-server": "^1.2.1",
     "moment": "^2.23.0",
