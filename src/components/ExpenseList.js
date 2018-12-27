@@ -4,6 +4,7 @@ import ExpenseListItem from './ExpenseListItem';
 import getVisibleExpenses from './../selectors/expenses';
 
 const ExpenseList = (props) => {
+    
     return(
         <div>
             <h1>Expense List:</h1>
